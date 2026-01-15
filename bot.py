@@ -1,4 +1,3 @@
-from keep_alive import keep_alive
 import discord
 from discord.ext import commands
 import aiohttp
@@ -87,6 +86,6 @@ async def on_member_join(member):
         print(f'Welcomed {member.display_name} to the server!')
     else:
         print('Could not find welcome channel!')
-keep_alive()
+
 import os
 bot.run(os.getenv('TOKEN'))
