@@ -88,4 +88,5 @@ async def on_member_join(member):
     else:
         print('Could not find welcome channel!')
 keep_alive()
-bot.run('MTQ2MDc0MjQ5MDIwMDk5Nzk1MA.G6JwAU.yHHOzKF4rTfOGwdWyUAtWv35p1TWSqqdRF_ZQA')
+import os
+bot.run(os.getenv('TOKEN'))
